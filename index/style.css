@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 100%;
+  font-family: sans-serif;
+}
+
+.logo {
+  size: 20px;
+}
+
+div,
+section,
+span,
+ul,
+li,
+a,
+header {
+  box-sizing: border-box;
+}
+
+/*css reset*/
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  align-items: center;
+}
+
+#menu li {
+  list-style: none;
+  display: inline-block;
+  margin: 20px;
+}
+
+#menu li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 28px;
+}
+
+section {
+  width: 100%;
+  float: left;
+  height: 100vh;
+  position: relative;
+}
+
+#hjem {
+  background-color: white;
+}
+
+#produkter {
+  background-color: green;
+}
+
+#omos {
+  background-color: white;
+}
+
+#kontakt {
+  background-color: green;
+}
+
+h1 {
+  position: absolute;
+}
