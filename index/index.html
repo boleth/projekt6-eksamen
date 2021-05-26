@@ -2,32 +2,60 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <title>NORQi</title>
   </head>
   <body>
+
+
     <div class="container">
       <section id="hjem">
         <header>
+          <div class="container">
+            <nav class="navbar" id="navID">
+              <button type="button" onclick="myFunction(this)" class="toggle-collapse" id="toggle-button">
+              <span class="toggle-icon"></span>
+              </button>
+              <ul class="side-nav">
+                <li class="nav-item">
+                  <a href="#" class="link-name">Punkt 1</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="link-name">Punkt 2</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="link-name">Punkt 3</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="link-name">Punkt 4</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="link-name">Punkt 5</a>
+                </li>
+
+          </nav>
+          </div>
           <a href="#">
             <!--<img name="logo" src="norqilogo.jpg" alt="logo" />-->
           </a>
-          <img
-            id="zoom"
-            width="300px"
-            height="auto"
-            onmousemove="zoomIn(event)"
-            onmouseout="zoomOut()"
-            src="kipgryde.jpg"
-          />
-          <div id="overlay" onmousemove="zoomIn()"></div>
-          <ul id="menu">
-            <li><a href="#hjem">Hjem</a></li>
-            <li><a href="#produkter">Produkter</a></li>
-            <li><a href="#omos">Om os</a></li>
-            <li><a href="#kontakt">Kontakt</a></li>
-          </ul>
         </header>
+        <img
+          id="zoom"
+          width="300px"
+          height="auto"
+          onmousemove="zoomIn(event)"
+          onmouseout="zoomOut()"
+          src="kipgryde.jpg"
+        />
+        <div id="overlay" onmousemove="zoomIn()"></div>
+        <ul id="menu">
+          <li><a href="#hjem">Hjem</a></li>
+          <li><a href="#produkter">Produkter</a></li>
+          <li><a href="#omos">Om os</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
       </section>
       <section id="produkter"><h1>Dette er produkter</h1></section>
       <section id="omos"><h1>Dette er om os</h1></section>
@@ -35,5 +63,6 @@
     </div>
     <script src="smoothscroll.js"></script>
     <script src="zoom.js"></script>
+    <script src="hamburgermenu.js"></script>
   </body>
 </html>
