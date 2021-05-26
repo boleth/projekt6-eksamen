@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <title>NORQi</title>
   </head>
   <body>
@@ -20,19 +22,19 @@
               </button>
               <ul class="side-nav">
                 <li class="nav-item">
-                  <a href="#" class="link-name">Punkt 1</a>
+                  <a href="#montering" class="link-name">Montering</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="link-name">Punkt 2</a>
+                  <a href="#udskiftning" class="link-name">Filter</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="link-name">Punkt 3</a>
+                  <a href="#test" class="link-name">Test</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="link-name">Punkt 4</a>
+                  <a href="#alarm" class="link-name">Alarm</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="link-name">Punkt 5</a>
+                  <a href="#programmer" class="link-name">Programmer</a>
                 </li>
 
           </nav>
@@ -50,19 +52,71 @@
           src="kipgryde.jpg"
         />
         <div id="overlay" onmousemove="zoomIn()"></div>
+      <div class="container-menu">
         <ul id="menu">
-          <li><a href="#hjem">Hjem</a></li>
-          <li><a href="#produkter">Produkter</a></li>
-          <li><a href="#omos">Om os</a></li>
-          <li><a href="#kontakt">Kontakt</a></li>
+          <li><a href="#montering">Montering</a></li>
+          <li><a href="#udskiftning">Filter</a></li>
+          <li><a href="#test">Test</a></li>
+          <li><a href="#alarm">Alarm</a></li>
+          <li><a href="#progammer">Progammer</a></li>
         </ul>
+      </div>
       </section>
-      <section id="produkter"><h1>Dette er produkter</h1></section>
-      <section id="omos"><h1>Dette er om os</h1></section>
-      <section id="kontakt"><h1>Dette er kontakt</h1></section>
+      <section id="montering"><h1>Montering af din NORQi induktions kipgryde</h1></section>
+      <ul id="montering-punkter">
+        <li><a href="#generelt">Generelt</a></li>
+        <li><a href="#håndtering">Håndtering</a></li>
+        <li><a href="#elektrisk">Elektisk installation</a></li>
+        <li><a href="#tilslutning">Tilslutning af vandforsyning</a></li>
+        <li><a href="#mekanisk">Mekanisk opstilling</a></li>
+        <li><a href="#fastgørelse">Fastgørelse</a></li>
+      </ul>
+      <section id="generelt"><h1>Generelt</h1></section>
+      <section id="håndtering"><h1>Håndtering</h1></section>
+      <section id="elektrisk"><h1>Elektrisk installation</h1></section>
+      <section id="tilslutning"><h1>Tilslutning af vandforsyning</h1></section>
+      <section id="mekanisk"><h1>Mekanisk opstilling</h1></section>
+      <section id="fastgørelse"><h1>Fastgørelse</h1></section>
+      <section id="udskiftning"><h1>Udskiftning af filter</h1></section>
+      <section id="test"><h1>Test af montering</h1></section>
+
+      <ul id="test-punkter">
+        <li><a href="#varme">Varme</a></li>
+        <li><a href="#omrøring">Omrører</a></li>
+        <li><a href="#vand">Vand</a></li>
+        <li><a href="#kipfunktion">Kipfunktion</a></li>
+        <li><a href="#ibrugtagning">Ibrugtagning</a></li>
+      </ul>
+      <section id="varme"><h1>Varme</h1></section>
+      <section id="omrøring"><h1>Omrører</h1></section>
+      <section id="vand"><h1>Vand</h1></section>
+      <section id="kipfunktion"><h1>Kipfunktion</h1></section>
+      <section id="ibrugtagning"><h1>Ibrugtagning</h1></section>
+      <section id="alarm"><h1>Alarmer/fejlkoder</h1></section>
+      <section id="progammer"><h1>Programmer</h1></section>
+
+      <ul id="programmer-punkter">
+        <li><a href="#opvarmning">Opvarmning</a></li>
+        <li><a href="#røre">Røre</a></li>
+        <li><a href="#påfyldning">Påfyldning</a></li>
+        <li><a href="#tider">Tider/klokkeslæt</a></li>
+        <li><a href="#køling">Køling</a></li>
+        <li><a href="#buzzer">Buzzer</a></li>
+      </ul>
+
+      <section id="opvarmning"><h1>Opvarmning</h1></section>
+      <section id="røre"><h1>Røre</h1></section>
+      <section id="påfyldning"><h1>Vandpåfyldning</h1></section>
+      <section id="tider"><h1>Tider/klokkeslæt</h1></section>
+      <section id="køling"><h1>Køling</h1></section>
+      <section id="buzzer"><h1>Buzzer</h1></section>
     </div>
+    <button id="btnScrollToTop">
+      <i class="material-icons">arrow_upward</i>
+    </button>
     <script src="smoothscroll.js"></script>
     <script src="zoom.js"></script>
     <script src="hamburgermenu.js"></script>
+    <script src="pil_op.js"></script>
   </body>
 </html>
