@@ -6,22 +6,34 @@
     <title>NORQi</title>
   </head>
   <body>
-    <section id="hjem">
-      <header>
-        <a href="#">
-          <img name="logo" src="norqilogo.jpg" alt="logo" />
-        </a>
-        <ul id="menu">
-          <li><a href="#">Hjem</a></li>
-          <li><a href="#">Produkter</a></li>
-          <li><a href="#">Om os</a></li>
-          <li><a href="#">Kontakt</a></li>
-        </ul>
-        <h1>Dette er hjem</h1>
-      </header>
-    </section>
-    <section id="produkter"><h1>Dette er produkter</h1></section>
-    <section id="omos"><h1>Dette er om os</h1></section>
-    <section id="kontakt"><h1>Dette er kontakt</h1></section>
+    <div class="container">
+      <section id="hjem">
+        <header>
+          <a href="#">
+            <!--<img name="logo" src="norqilogo.jpg" alt="logo" />-->
+          </a>
+          <img
+            id="zoom"
+            width="300px"
+            height="auto"
+            onmousemove="zoomIn(event)"
+            onmouseout="zoomOut()"
+            src="kipgryde.jpg"
+          />
+          <div id="overlay" onmousemove="zoomIn()"></div>
+          <ul id="menu">
+            <li><a href="#hjem">Hjem</a></li>
+            <li><a href="#produkter">Produkter</a></li>
+            <li><a href="#omos">Om os</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+          </ul>
+        </header>
+      </section>
+      <section id="produkter"><h1>Dette er produkter</h1></section>
+      <section id="omos"><h1>Dette er om os</h1></section>
+      <section id="kontakt"><h1>Dette er kontakt</h1></section>
+    </div>
+    <script src="smoothscroll.js"></script>
+    <script src="zoom.js"></script>
   </body>
 </html>
