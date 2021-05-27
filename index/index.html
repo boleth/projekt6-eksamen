@@ -11,10 +11,9 @@
   </head>
   <body>
 
-
     <div class="container">
       <section id="hjem">
-        <header>
+
           <div class="container">
             <nav class="navbar" id="navID">
               <button type="button" onclick="myFunction(this)" class="toggle-collapse" id="toggle-button">
@@ -40,37 +39,44 @@
           </nav>
           </div>
           <a href="#">
-            <!--<img name="logo" src="norqilogo.jpg" alt="logo" />-->
+            <img class="logo" src="norqilogo.jpg" alt="logo" />
           </a>
-        </header>
-        <img
-          id="zoom"
-          width="300px"
-          height="auto"
-          onmousemove="zoomIn(event)"
-          onmouseout="zoomOut()"
-          src="kipgryde.jpg"
-        />
-        <div id="overlay" onmousemove="zoomIn()"></div>
+          <div class="overskrift">Velkommen teknikker! Hvad skal du have hjælp til?</div>
       <div class="container-menu">
         <ul id="menu">
-          <li><a href="#montering">Montering</a></li>
-          <li><a href="#udskiftning">Filter</a></li>
-          <li><a href="#test">Test</a></li>
-          <li><a href="#alarm">Alarm</a></li>
-          <li><a href="#progammer">Progammer</a></li>
+          <!-- <script type="text/javascript">
+          let myArray = ["one", "two", "three", "four"];
+          let tekst ;
+          for(let i = 0; i < myArray.length; i++){
+            tekst=tekst+"-"+myArray[i];
+          }
+          console.log(tekst)
+          document.getElementById("menu").innerHTML=tekst;
+          </script> -->
+          <li class="punkt"><a href="#montering"><h3>Montering</h3></a></li>
+          <li class="punkt"><a href="#udskiftning"><h3>Filter</h3></a></li>
+          <li class="punkt"><a href="#test"><h3>Test</h3></a></li>
+          <li class="punkt"><a href="#alarm"><h3>Alarm</h3></a></li>
+          <li class="punkt"><a href="#progammer"><h3>Progammer</h3></a></li>
         </ul>
       </div>
+      <img class="kipgryde" src="kipgryde.jpg"/>
       </section>
-      <section id="montering"><h1>Montering af din NORQi induktions kipgryde</h1></section>
-      <ul id="montering-punkter">
-        <li><a href="#generelt">Generelt</a></li>
-        <li><a href="#håndtering">Håndtering</a></li>
-        <li><a href="#elektrisk">Elektisk installation</a></li>
-        <li><a href="#tilslutning">Tilslutning af vandforsyning</a></li>
-        <li><a href="#mekanisk">Mekanisk opstilling</a></li>
-        <li><a href="#fastgørelse">Fastgørelse</a></li>
-      </ul>
+      <section id="montering"><h1>Montering af din NORQi induktions kipgryde</h1>
+
+        <input type="text" class="myInput" onkeyup="myFunction()" placeholder="Søg.." title="Type in a name">
+        <h2>
+        <ul class="myUL">
+          <li><a href="#generelt">Generelt</a></li>
+          <li><a href="#håndtering">Håndtering</a></li>
+          <li><a href="#elektrisk">Elektrisk installation</a></li>
+          <li><a href="#tilslutning">Tilslutning af vandforsyning</a></li>
+          <li><a href="#mekanisk">Mekanisk opstilling</a></li>
+          <li><a href="#fastgørelse">Fastgørelse</a></li>
+        </ul>
+      </h2>
+      </section>
+
       <section id="generelt"><h1>Generelt</h1></section>
       <section id="håndtering"><h1>Håndtering</h1></section>
       <section id="elektrisk"><h1>Elektrisk installation</h1></section>
@@ -78,38 +84,38 @@
       <section id="mekanisk"><h1>Mekanisk opstilling</h1></section>
       <section id="fastgørelse"><h1>Fastgørelse</h1></section>
       <section id="udskiftning"><h1>Udskiftning af filter</h1></section>
-      <section id="test"><h1>Test af montering</h1></section>
+      <section id="test"><h1>Test af montering</h1>
 
-      <ul id="test-punkter">
-        <li><a href="#varme">Varme</a></li>
-        <li><a href="#omrøring">Omrører</a></li>
-        <li><a href="#vand">Vand</a></li>
-        <li><a href="#kipfunktion">Kipfunktion</a></li>
-        <li><a href="#ibrugtagning">Ibrugtagning</a></li>
-      </ul>
+        <input type="text" class="myInput" onkeyup="myFunction()" placeholder="Søg.." title="Type in a name">
+        <h2>
+        <ul class="myUL">
+          <li><a href="#varme">Varme</a></li>
+          <li><a href="#omrøring">Omrører</a></li>
+          <li><a href="#vand">Vand</a></li>
+          <li><a href="#kipfunktion">Kipfunktion</a></li>
+          <li><a href="#ibrugtagning">Ibrugtagning</a></li>
+        </ul>
+      </h2>
+      </section>
       <section id="varme"><h1>Varme</h1></section>
       <section id="omrøring"><h1>Omrører</h1></section>
       <section id="vand"><h1>Vand</h1></section>
       <section id="kipfunktion"><h1>Kipfunktion</h1></section>
       <section id="ibrugtagning"><h1>Ibrugtagning</h1></section>
       <section id="alarm"><h1>Alarmer/fejlkoder</h1></section>
-      <section id="progammer"><h1>Programmer</h1></section>
-
-      <ul id="programmer-punkter">
-        <li><a href="#opvarmning">Opvarmning</a></li>
-        <li><a href="#røre">Røre</a></li>
-        <li><a href="#påfyldning">Påfyldning</a></li>
-        <li><a href="#tider">Tider/klokkeslæt</a></li>
-        <li><a href="#køling">Køling</a></li>
-        <li><a href="#buzzer">Buzzer</a></li>
-      </ul>
-
-      <section id="opvarmning"><h1>Opvarmning</h1></section>
-      <section id="røre"><h1>Røre</h1></section>
-      <section id="påfyldning"><h1>Vandpåfyldning</h1></section>
-      <section id="tider"><h1>Tider/klokkeslæt</h1></section>
-      <section id="køling"><h1>Køling</h1></section>
-      <section id="buzzer"><h1>Buzzer</h1></section>
+      <section id="progammer"><h1>Programmer</h1>
+        <input type="text" class="myInput" onkeyup="myFunction()" placeholder="Søg.." title="Type in a name">
+        <h2>
+        <ul class="myUL">
+          <li><a href="#opvarmning">Opvarmning</a></li>
+          <li><a href="#røre">Røre</a></li>
+          <li><a href="#påfyldning">Vandpåfyldning</a></li>
+          <li><a href="#tider">Tider/klokkeslæt</a></li>
+          <li><a href="#køling">Køling</a></li>
+          <li><a href="#buzzer">Buzzer</a></li>
+        </ul>
+      </h2>
+      </section>
     </div>
     <button id="btnScrollToTop">
       <i class="material-icons">arrow_upward</i>
@@ -118,5 +124,6 @@
     <script src="zoom.js"></script>
     <script src="hamburgermenu.js"></script>
     <script src="pil_op.js"></script>
+    <script src="filter.js"></script>
   </body>
 </html>
