@@ -74,7 +74,9 @@ li a:hover {
 }
 
 h1 {
-  position: absolute;
+  text-align: center;
+  padding-top: 5%;
+  font-size: 35px;
 }
 
 h2{
@@ -163,17 +165,22 @@ button{
 .myInput {
   background-position: 10px 12px;
   background-repeat: no-repeat;
-  width: 100%;
   font-size: 16px;
+  width: 60%;
   padding: 12px 20px 12px 40px;
   border: 1px solid #ddd;
   margin-bottom: 12px;
+  margin-top: 5%;
+  margin-left: 20%;
 }
 
 .myUL {
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  margin: 20%;
+  margin-top: 0;
+  background-color: #54ad35;
+  border-radius: 10%;
 }
 
 .myUL li a {
@@ -183,8 +190,8 @@ button{
   padding: 12px;
   text-decoration: none;
   font-size: 18px;
-  color: black;
-  display: block
+  color: #313030;
+  display: block;
 }
 
 .myUL li a:hover:not(.header) {
@@ -221,6 +228,33 @@ section {
   width: 350px;
   height: auto;
   margin-left: 38%;
+}
+
+.billede1 {
+  width: auto;
+  height: 300px;
+  margin-right: 90px;
+  margin-top: 0;
+}
+
+.tekst_felt1 {
+margin-left: 20px;
+margin-right: 250px;
+}
+
+.collage1 {
+  display: flex;
+  flex-direction: columns;
+  list-style: none;
+  color: #313030;
+  justify-content: space-around;
+  padding: 0;
+  font-size: 20px;
+  margin: 5%;
+}
+
+#hjem{
+  height: 100%;
 }
 
  #montering {
@@ -350,4 +384,26 @@ section {
 
 #btnScrollToTop:active {
   background: #54ad35;
+}
+
+#button {
+  color: #ffffff;
+  background-color: #54ad35;
+  padding: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 20px;
+  border-radius: 60px;
+  border-style: none;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin-left: 36%;
+  margin-bottom: 5%;
+}
+
+
+#first-ul {
+  list-style: none;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin-left: 40%;
+  margin-bottom: 2%;
 }
