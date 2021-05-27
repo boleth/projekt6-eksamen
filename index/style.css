@@ -1,12 +1,11 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: "Roboto Condensed", sans-serif;
 }
 
-
-.container{
+.container {
   display: flex;
   flex-wrap: wrap;
 }
@@ -31,7 +30,7 @@ nav {
   width: 335px;
   height: 100%;
   background-color: #54ad35;
-  test-align: center;
+  text-align: center;
   transition: 0.8s ease;
   z-index: 99;
   margin-top: 0;
@@ -60,12 +59,7 @@ li a {
   text-align: center;
 }
 
-li a:hover {
-  background-color; white;
-  color; grey;
-}
-
-.overskrift{
+.overskrift {
   font-size: 30px;
   text-align: center;
   margin-bottom: 20px;
@@ -79,17 +73,17 @@ h1 {
   font-size: 35px;
 }
 
-h2{
+h2 {
   text-decoration: none;
   color: #313030;
   font-size: 20px;
   padding: 1px;
   flex: 1;
-  text-align: left;
+  text-align: center;
   flex-wrap: wrap;
 }
 
-h3{
+h3 {
   text-decoration: none;
   font-size: 25px;
   color: #ffffff;
@@ -101,7 +95,7 @@ h3{
   padding-right: 20px;
 }
 
-.punkt{
+.punkt {
   text-decoration: none;
   color: #ffffff;
   border-radius: 60px;
@@ -110,24 +104,27 @@ h3{
 .toggle-collapse {
   float: left;
   margin-left: 1em;
-  margin-top: .5em;
-  content:"";
+  margin-top: 0.5em;
+  content: "";
   outline: inherit;
   border: 0px;
   background-color: transparent;
 }
 
-.toggle-icon, .toggle-icon:before, .toggle-icon:after {
+.toggle-icon,
+.toggle-icon:before,
+.toggle-icon:after {
   content: "";
   width: 30px;
   height: 3px;
   position: fixed;
   background-color: #ffffff;
   border-radius: 2em;
-  border: 1px solid #ffffff;
+  border: 1px solid;
   cursor: pointer;
-  transition: 0.800s ease;
+  transition: 0.8s ease;
   margin-top: 0.8em;
+  z-index: 102;
 }
 
 .toggle-icon:before {
@@ -155,8 +152,7 @@ h3{
   width: 30px;
 }
 
-
-button{
+button {
   background-color: #696969;
   color: #ffffff;
   padding: 0.5rem;
@@ -168,7 +164,7 @@ button{
   font-size: 16px;
   width: 60%;
   padding: 12px 20px 12px 40px;
-  border: 1px solid #ddd;
+  border: 1px solid #313030;
   margin-bottom: 12px;
   margin-top: 5%;
   margin-left: 20%;
@@ -181,11 +177,12 @@ button{
   margin-top: 0;
   background-color: #54ad35;
   border-radius: 10%;
+  z-index: 98;
 }
 
 .myUL li a {
   border: 1px solid #ddd;
-  margin-top: -1px; /* Prevent double borders */
+  margin-top: -1px;
   background-color: #f6f6f6;
   padding: 12px;
   text-decoration: none;
@@ -196,24 +193,23 @@ button{
 
 .myUL li a:hover:not(.header) {
   background-color: #eee;
+  z-index: 90;
 }
-
 
 ul menu {
   display: flex;
   flex-wrap: wrap;
   margin: 10px;
 }
- #menu{
-   margin: 5px;
-   border: 10px;
-   display: flex;
-   flex-wrap: wrap-reverse;
-   flex-direction: row;
-   list-style: none;
-   justify-content: center;
-   order: 5;
-
+#menu {
+  margin: 5px;
+  border: 10px;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  flex-direction: row;
+  list-style: none;
+  justify-content: center;
+  order: 5;
 }
 
 section {
@@ -222,7 +218,6 @@ section {
   height: 100vh;
   position: relative;
 }
-
 
 .kipgryde {
   width: 350px;
@@ -238,13 +233,15 @@ section {
 }
 
 .tekst_felt1 {
-margin-left: 20px;
-margin-right: 250px;
+  margin-left: 20px;
+  margin-right: 250px;
+  display: flex;
+  flex-direction: row;
 }
 
 .collage1 {
   display: flex;
-  flex-direction: columns;
+  flex-direction: row;
   list-style: none;
   color: #313030;
   justify-content: space-around;
@@ -253,11 +250,11 @@ margin-right: 250px;
   margin: 5%;
 }
 
-#hjem{
+#hjem {
   height: 100%;
 }
 
- #montering {
+#montering {
   background-color: #ffffff;
   color: #313030;
 }
@@ -374,7 +371,6 @@ margin-right: 250px;
   height: 50px;
   border-radius: 50%;
   background: #ffffff;
-  box-shadow: #54ad35;
   color: #54ad35;
   outline: none;
   cursor: pointer;
@@ -395,15 +391,14 @@ margin-right: 250px;
   font-size: 20px;
   border-radius: 60px;
   border-style: none;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   margin-left: 36%;
   margin-bottom: 5%;
 }
 
-
 #first-ul {
   list-style: none;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   margin-left: 40%;
   margin-bottom: 2%;
 }
