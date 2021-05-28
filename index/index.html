@@ -1,121 +1,461 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="da" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <title>NORQi</title>
   </head>
   <body>
-
-
-    <div class="container">
-      <section id="hjem">
-        <header>
-          <div class="container">
-            <nav class="navbar" id="navID">
-              <button type="button" onclick="myFunction(this)" class="toggle-collapse" id="toggle-button">
-              <span class="toggle-icon"></span>
-              </button>
-              <ul class="side-nav">
-                <li class="nav-item">
-                  <a href="#montering" class="link-name">Montering</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#udskiftning" class="link-name">Filter</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#test" class="link-name">Test</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#alarm" class="link-name">Alarm</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#programmer" class="link-name">Programmer</a>
-                </li>
-
-          </nav>
-          </div>
-          <a href="#">
-            <!--<img name="logo" src="norqilogo.jpg" alt="logo" />-->
-          </a>
-        </header>
-        <img
-          id="zoom"
-          width="300px"
-          height="auto"
-          onmousemove="zoomIn(event)"
-          onmouseout="zoomOut()"
-          src="kipgryde.jpg"
-        />
-        <div id="overlay" onmousemove="zoomIn()"></div>
+    <section id="hjem">
+      <div class="container">
+        <nav class="navbar" id="navID">
+          <button
+            type="button"
+            onclick="myFunction(this)"
+            class="toggle-collapse"
+            id="toggle-button"
+          >
+            <span class="toggle-icon"></span>
+          </button>
+          <ul class="side-nav">
+            <li class="nav-item">
+              <a href="#montering" class="link-name">Montering</a>
+            </li>
+            <li class="nav-item">
+              <a href="#udskiftning" class="link-name">Filter</a>
+            </li>
+            <li class="nav-item">
+              <a href="#test" class="link-name">Test</a>
+            </li>
+            <li class="nav-item">
+              <a href="#alarm" class="link-name">Alarm</a>
+            </li>
+            <li class="nav-item">
+              <a href="#programmer" class="link-name">Programmer</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <a href="#">
+        <img class="logo" src="norqilogo.jpg" alt="logo" />
+      </a>
+      <div class="overskrift">
+        Velkommen! Hvad vil du vide mere om i dag?
+      </div>
       <div class="container-menu">
         <ul id="menu">
-          <li><a href="#montering">Montering</a></li>
-          <li><a href="#udskiftning">Filter</a></li>
-          <li><a href="#test">Test</a></li>
-          <li><a href="#alarm">Alarm</a></li>
-          <li><a href="#progammer">Progammer</a></li>
+          <li class="punkt">
+            <a href="#montering"><h3>Montering</h3></a>
+          </li>
+          <li class="punkt">
+            <a href="#udskiftning"><h3>Filter</h3></a>
+          </li>
+          <li class="punkt">
+            <a href="#test"><h3>Test</h3></a>
+          </li>
+          <li class="punkt">
+            <a href="#alarm"><h3>Alarm</h3></a>
+          </li>
+          <li class="punkt">
+            <a href="#progammer"><h3>Progammer</h3></a>
+          </li>
         </ul>
       </div>
-      </section>
-      <section id="montering"><h1>Montering af din NORQi induktions kipgryde</h1></section>
-      <ul id="montering-punkter">
-        <li><a href="#generelt">Generelt</a></li>
-        <li><a href="#håndtering">Håndtering</a></li>
-        <li><a href="#elektrisk">Elektisk installation</a></li>
-        <li><a href="#tilslutning">Tilslutning af vandforsyning</a></li>
-        <li><a href="#mekanisk">Mekanisk opstilling</a></li>
-        <li><a href="#fastgørelse">Fastgørelse</a></li>
-      </ul>
-      <section id="generelt"><h1>Generelt</h1></section>
-      <section id="håndtering"><h1>Håndtering</h1></section>
-      <section id="elektrisk"><h1>Elektrisk installation</h1></section>
-      <section id="tilslutning"><h1>Tilslutning af vandforsyning</h1></section>
-      <section id="mekanisk"><h1>Mekanisk opstilling</h1></section>
-      <section id="fastgørelse"><h1>Fastgørelse</h1></section>
-      <section id="udskiftning"><h1>Udskiftning af filter</h1></section>
-      <section id="test"><h1>Test af montering</h1></section>
+      <img class="kipgryde" src="kipgryde3.jpg" alt="kipgryde" />
+      <div class="container1">
+        <ul id="first-ul"></ul>
+        <button id="button">Har du problemer? Kontakt os her</button>
+      </div>
+    </section>
+    <section id="montering">
+      <h1>Montering af din NORQi induktions kipgryde</h1>
 
-      <ul id="test-punkter">
-        <li><a href="#varme">Varme</a></li>
-        <li><a href="#omrøring">Omrører</a></li>
-        <li><a href="#vand">Vand</a></li>
-        <li><a href="#kipfunktion">Kipfunktion</a></li>
-        <li><a href="#ibrugtagning">Ibrugtagning</a></li>
-      </ul>
-      <section id="varme"><h1>Varme</h1></section>
-      <section id="omrøring"><h1>Omrører</h1></section>
-      <section id="vand"><h1>Vand</h1></section>
-      <section id="kipfunktion"><h1>Kipfunktion</h1></section>
-      <section id="ibrugtagning"><h1>Ibrugtagning</h1></section>
-      <section id="alarm"><h1>Alarmer/fejlkoder</h1></section>
-      <section id="progammer"><h1>Programmer</h1></section>
+      <input
+        type="text"
+        class="myInput"
+        onkeyup="myFunction()"
+        placeholder="Søg.."
+        title="Søgefelt"
+      />
 
-      <ul id="programmer-punkter">
-        <li><a href="#opvarmning">Opvarmning</a></li>
-        <li><a href="#røre">Røre</a></li>
-        <li><a href="#påfyldning">Påfyldning</a></li>
-        <li><a href="#tider">Tider/klokkeslæt</a></li>
-        <li><a href="#køling">Køling</a></li>
-        <li><a href="#buzzer">Buzzer</a></li>
+      <ul class="myUL">
+        <li>
+          <a href="#generelt"><h2>Generelt</h2></a>
+        </li>
+        <li>
+          <a href="#håndtering"><h2>Håndtering</h2></a>
+        </li>
+        <li>
+          <a href="#elektrisk"><h2>Elektrisk installation</h2></a>
+        </li>
+        <li>
+          <a href="#tilslutning"><h2>Tilslutning af vandforsyning</h2></a>
+        </li>
+        <li>
+          <a href="#mekanisk"><h2>Mekanisk opstilling</h2></a>
+        </li>
+        <li>
+          <a href="#fastgørelse"><h2>Fastgørelse</h2></a>
+        </li>
       </ul>
+    </section>
 
-      <section id="opvarmning"><h1>Opvarmning</h1></section>
-      <section id="røre"><h1>Røre</h1></section>
-      <section id="påfyldning"><h1>Vandpåfyldning</h1></section>
-      <section id="tider"><h1>Tider/klokkeslæt</h1></section>
-      <section id="køling"><h1>Køling</h1></section>
-      <section id="buzzer"><h1>Buzzer</h1></section>
-    </div>
+    <section id="generelt">
+      <h1>Generelt</h1>
+      <div class="collage1">
+        <p class="tekst_felt1">
+          Før du begynder at installere skal denne vejledning gennemlæses, da
+          den indeholder vigtige informationer om sikkerheden når du installerer
+          og anvender gryden. Grydens formål er at skulle anvendes til
+          professionelt brug ved madlavning i professionelle køkkener og til
+          lignende formål. Gryden må derfor ikke anvendes til andre formål
+          Gryden er lavet, så der er taget størst mulig hensyn til miljøet. Både
+          ved produktion, men også under anvendelse. Den er isoleret med
+          Superwool på alle sider, for at minimere varmtab. Omrøreren har en
+          energisparemotor klasse IE3. Gryden må ikke kasseres som almindeligt
+          affald, men afleveres til genbrug.
+        </p>
+        <div class="billede1">
+          <img class="billede1" src="kipgryde3.jpg" alt="billede1" />
+        </div>
+      </div>
+    </section>
+    <section id="håndtering">
+      <h1>Håndtering</h1>
+      <div class="collage1">
+        <p class="tekst_felt1">
+          Apparatet må kun monteres og demonteres af faglært. Gryden må kun
+          monteres i et lokale med gulvafløb og det skal være indendørs. Vi
+          anbefaler at etablere en gulvbrønd i forbindelse med installationen af
+          gryden.
+        </p>
+        <div class="billede1">
+          <img class="billede1" src="kipgryde4.jpg" alt="billede1" />
+        </div>
+      </div>
+    </section>
+    <section id="elektrisk">
+      <h1>Elektrisk installation</h1>
+      <div class="collage1">
+        <p class="tekst_felt1">
+          VIGTIGT! Gryden må ikke ud for over- eller underspænding! Når du skal
+          montere tilslutningskablet, skal du demontere fronten og så skal
+          kablet monteres direkte på forsyningsadskilleren. Apparatet SKAL
+          jordforbindes, da det er af klasse I. Beskyttelse mod indirekte
+          berøring skal etableres i den faste installation. Gryden kan have en
+          lækstrøm > 10mA. Se mærkeplade for aktuel værdi. Når du skal montere
+          forsyningskablet, skal det monteres direkte i klemmerne på
+          forsyningsadskilleren. Husk at beskyttelseslederen skal laves lidt
+          længere end de andre ledere, så det er den sidste der bliver revet ud,
+          hvis der bliver trukket for hårdt i kablet. Fasefølgen skal være
+          korrekt, hvis gryden er forsynet med dataopsamling (forbrugt kWh og
+          forbrugt vand). Der må IKKE stå ‘false’ på displayet på kWh måleren.
+          Det er en kraftig anbefaling at montere overspændingsbeskyttelse i den
+          faste installation, så der undgås skader på elektronikenheden ved
+          atmosfæriske udladninger og koblinger i højspændingsnettet. På
+          bagsiden af apparatet findes der tilslutning for
+          udligningsforbindelse.
+        </p>
+        <div class="billede1">
+          <img class="billede1" src="kipgryde3.jpg" alt="billede1" />
+        </div>
+      </div>
+    </section>
+    <section id="tilslutning">
+      <h1>Tilslutning af vandforsyning</h1>
+      <div class="collage1">
+        <p class="tekst_felt1">
+          Vandforsyning til både koldt og varmt vand tilsluttes bagerst i
+          støttesøjlen. Varm vand anvendes kun i forbindelse med rensepistol.
+          Forsyningen dimensioneres til at give ca. 30 L/min. Det maksimale
+          vandtryk er 6 bar ~ 600kPa. I nærheden af gryden skal der installeres
+          en stophane på begge forsyninger. Udløbstudens stråle kan reguleres
+          ved at skifte indsatsen ud, så strålen uanset vandtryk altid vil ramme
+          i gryden. Er gryden forsynet med spulepistol, så skal der monteres en
+          rørafbryder i den faste installation. Det forhindre tilbagesugning ved
+          svigt i vandforsyningen.
+        </p>
+        <div class="billede1">
+          <img class="billede1" src="kipgryde4.jpg" alt="billede1" />
+        </div>
+      </div>
+    </section>
+    <section id="mekanisk">
+      <h1>Mekanisk opstilling</h1>
+      <div class="collage1">
+        <p class="tekst_felt1">
+          Når gryden skal placeres, skal der påtænkes nødvendig plade omkring
+          den, sådan så låget kan åbnes helt. Derudover bør der være plads
+          omkring gryden for at forhindre at man får fingrene i klemme, samt for
+          nemmere plads til rengøring. Der skal også være plads til service og
+          vedligeholdelse.
+        </p>
+        <div class="billede1">
+          <img class="billede1" src="kipgryde3.jpg" alt="billede1" />
+        </div>
+      </div>
+    </section>
+    <section id="fastgørelse">
+      <h1>Fastgørelse</h1>
+      <div class="collage1">
+        <p class="tekst_felt1">
+          Hullerne opmærkes gennem foden, derefter bores hullerne som passer til
+          M8 ekspansionshylster. Det er kun de to forreste ben på hver søjle,
+          der er nødvendige at fastgøre.
+        </p>
+        <div class="billede1">
+          <img class="billede1" src="kipgryde4.jpg" alt="billede1" />
+        </div>
+      </div>
+    </section>
+    <section id="udskiftning">
+      <h1>Udskiftning af filter</h1>
+      <div class="collage1">
+        <p class="tekst_felt1">
+          HER SKAL VI SELV FINDE PÅ NOGET
+        </p>
+        <div class="billede1">
+          <img class="billede1" src="kipgryde3.jpg" alt="billede1" />
+        </div>
+      </div>
+    </section>
+    <section id="test">
+      <h1>Test af montering</h1>
+
+      <input
+        type="text"
+        class="myInput"
+        onkeyup="myFunction()"
+        placeholder="Søg.."
+        title="Søgefelt"
+      />
+
+      <ul class="myUL">
+        <li>
+          <a href="#varme"><h2>Varme</h2></a>
+        </li>
+        <li>
+          <a href="#omrøring"><h2>Omrører</h2></a>
+        </li>
+        <li>
+          <a href="#vand"><h2>Vand</h2></a>
+        </li>
+        <li>
+          <a href="#kipfunktion"><h2>Kipfunktion</h2></a>
+        </li>
+        <li>
+          <a href="#ibrugtagning"><h2>Ibrugtagning</h2></a>
+        </li>
+      </ul>
+    </section>
+    <section id="varme">
+      <h1>Varme</h1>
+      <div class="collage1">
+        <p class="tekst_felt1">
+          Når gryden er installeret og tilsluttet skal der foretages en test
+          inden ibrugtagning. For at kontrollere varmen indstilles temperaturen
+          til f.eks. 100°C og der tændes for varmen. Herefter observer at det
+          varmer.
+        </p>
+        <div class="billede1">
+          <img class="billede1" src="kipgryde4.jpg" alt="billede1" />
+        </div>
+      </div>
+    </section>
+    <section id="omrøring">
+      <h1>Omrører</h1>
+      <div class="collage1">
+        <p class="tekst_felt1">
+          For at teste omrøreren tændes der for den med f.eks. 50 o/min. og på
+          program 1. Tænd for omrøreren med f.eks. 50 o/min og program 1.
+          Herefter observeres det at omrøreren kører. Derefter reduceres
+          omdrejningstallet til 20 o/min. Kontroller switch på lågarmen, og se
+          om den påvirkes når låget åbnes. Når låget åbnes mere en 40-50 mm. så
+          skal omrøreren stoppe. Hvis gryden har ‘SlowMix’ testes funktionen med
+          åbent låg og omrøreren må kun køre så længe tasten trykkes.
+        </p>
+        <div class="billede1">
+          <img class="billede1" src="kipgryde3.jpg" alt="billede1" />
+        </div>
+      </div>
+    </section>
+    <section id="vand">
+      <h1>Vand</h1>
+      <div class="collage1">
+        <p class="tekst_felt1">
+          For at teste vandet vælges antal liter og på skærmen og der tændes for
+          vandet. Observer herefter at der tælles op på skærmen.
+        </p>
+        <div class="billede1">
+          <img class="billede1" src="kipgryde4.jpg" alt="billede1" />
+        </div>
+      </div>
+    </section>
+    <section id="kipfunktion">
+      <h1>Kipfunktion</h1>
+      <div class="collage1">
+        <p class="tekst_felt1">
+          Til at teste kipfunktionen skal der trykkes på de respektive knapper.
+          Når knappen slippes skal gryden stoppes og være i nederste og højeste
+          stilling.
+        </p>
+        <div class="billede1">
+          <img class="billede1" src="kipgryde3.jpg" alt="billede1" />
+        </div>
+      </div>
+    </section>
+    <section id="ibrugtagning">
+      <h1>Ibrugtagning</h1>
+      <div class="collage1">
+        <p class="tekst_felt1">
+          Når gryden er testet helt igennem og betjeningsvejledningen er læst så
+          kan gryden tages i brug. Det første der skal gøres er at gøre den ren.
+        </p>
+        <div class="billede1">
+          <img class="billede1" src="kipgryde4.jpg" alt="billede1" />
+        </div>
+      </div>
+    </section>
+    <section id="alarm">
+      <h1>Alarmer/fejlkoder</h1>
+      <div class="collage1">
+        <p class="tekst_felt1">
+          HER SKAL VI SELV FINDE PÅ NOGET
+        </p>
+        <div class="billede1">
+          <img class="billede1" src="kipgryde3.jpg" alt="billede1" />
+        </div>
+      </div>
+    </section>
+    <section id="progammer">
+      <h1>Programmer</h1>
+      <input
+        type="text"
+        class="myInput"
+        onkeyup="myFunction()"
+        placeholder="Søg.."
+        title="Søgefelt"
+      />
+
+      <ul class="myUL">
+        <li>
+          <a href="#opvarmning"><h2>Opvarmning</h2></a>
+        </li>
+        <li>
+          <a href="#røre"><h2>Røre</h2></a>
+        </li>
+        <li>
+          <a href="#påfyldning"><h2>Vandpåfyldning</h2></a>
+        </li>
+        <li>
+          <a href="#tider"><h2>Tider/klokkeslæt</h2></a>
+        </li>
+        <li>
+          <a href="#køling"><h2>Køling</h2></a>
+        </li>
+        <li>
+          <a href="#buzzer"><h2>Buzzer</h2></a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="opvarmning">
+      <h1>Opvarmning</h1>
+      <div class="collage1">
+        <p class="tekst_felt1">
+          Hvis der ønskes at varme/tilberede produktet i f.eks. 30 min. ved en
+          given temperatur, og efterfølgende holde produktet varm ved lavere
+          temperatur, vælges opvarmning i felt 1. Derefter vælges omrøring i
+          felt 2, hvis det ønskes, og tiden vælges i felt 3. I felt 4 vælges
+          ønsket varmholdningstemperatur.
+        </p>
+        <div class="billede1">
+          <img class="billede1" src="kipgryde4.jpg" alt="billede1" />
+        </div>
+      </div>
+    </section>
+    <section id="røre">
+      <h1>Røre</h1>
+      <div class="collage1">
+        <p class="tekst_felt1">
+          Hvis man ønsker at anvende omrøreren, så skal man trykke på tredje
+          felt og vælge omrører på symbolet til højre. Herefter vil undermenuen
+          dukke op og røremønstre og omdrejningstal kan vælges.
+        </p>
+        <div class="billede1">
+          <img class="billede1" src="kipgryde3.jpg" alt="billede1" />
+        </div>
+      </div>
+    </section>
+    <section id="påfyldning">
+      <h1>Vandpåfyldning</h1>
+      <div class="collage1">
+        <p class="tekst_felt1">
+          HER SKAL VI SELV FINDE PÅ NOGET
+        </p>
+        <div class="billede1">
+          <img class="billede1" src="kipgryde4.jpg" alt="billede1" />
+        </div>
+      </div>
+    </section>
+    <section id="tider">
+      <h1>Tider/klokkeslæt</h1>
+      <div class="collage1">
+        <p class="tekst_felt1">
+          LHvis der ønskes en forsinket start af opvarmningen, så vælges der en
+          tidsfunktion i første felt. Enten et klokkeslæt, hvis der skal startes
+          på en given tid eller en given forsinket start i minutter eller timer.
+          Derefter trykkes på næste felt og symbolet for opvarmning vælges. Så
+          skifter skærmen til ‘Undermenu varme’, hvor der her indtastes de
+          ønskede parametre og der afsluttes med krydset. Valget bekræftes ved
+          at trykke på feltet igen.
+        </p>
+        <div class="billede1">
+          <img class="billede1" src="kipgryde3.jpg" alt="billede1" />
+        </div>
+      </div>
+    </section>
+    <section id="køling">
+      <h1>Køling</h1>
+      <div class="collage1">
+        <p class="tekst_felt1">
+          Hvis indholdet ønskes at blive kølet ned, laves et køleprogram. Der
+          skal altid angives en tid f.eks. angives køling til 10°C og 120 min.,
+          og køleforløbet vil stoppe når den første betingelse er opnået.
+        </p>
+        <div class="billede1">
+          <img class="billede1" src="kipgryde4.jpg" alt="billede1" />
+        </div>
+      </div>
+    </section>
+    <section id="buzzer">
+      <h1>Buzzer</h1>
+      <div class="collage1">
+        <p class="tekst_felt1">
+          Hvis man ønsker et buzzer-signal når tiden er gået, så vælges dette i
+          felt 4.
+        </p>
+        <div class="billede1">
+          <img class="billede1" src="kipgryde3.jpg" alt="billede1" />
+        </div>
+      </div>
+    </section>
+
     <button id="btnScrollToTop">
       <i class="material-icons">arrow_upward</i>
     </button>
     <script src="smoothscroll.js"></script>
-    <script src="zoom.js"></script>
+    <script src="array.js"></script>
+    <script src="filter.js"></script>
     <script src="hamburgermenu.js"></script>
     <script src="pil_op.js"></script>
   </body>

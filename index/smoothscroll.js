@@ -40,7 +40,7 @@ document.querySelectorAll('a[href^="#alarm"]').forEach((anchor) => {
   });
 });
 
-document.querySelectorAll('a[href^="#programmer"]').forEach((anchor) => {
+document.querySelectorAll('a[href^="#progammer"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
 

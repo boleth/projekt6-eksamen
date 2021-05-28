@@ -1,31 +1,20 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
-body {
-  font-size: 100%;
-  font-family: sans-serif;
-  overflow-x: hidden;
+.container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .logo {
-  height: 10px;
+  height: 150px;
   width: auto;
+  margin: 20px;
 }
-
-div,
-section,
-span,
-ul,
-li,
-a,
-header {
-  box-sizing: border-box;
-}
-
-/*css reset*/
 
 header {
   width: 100%;
@@ -36,13 +25,16 @@ header {
 }
 
 nav {
-  position: absolute;
+  position: fixed;
   right: -260px;
-  width: 260px;
+  width: 335px;
   height: 100%;
-  background-color: #4cff00;
-  test-align: center;
+  background-color: #54ad35;
+  text-align: center;
   transition: 0.8s ease;
+  z-index: 99;
+  margin-top: 0;
+  padding-top: 20px;
 }
 
 nav ul {
@@ -53,43 +45,86 @@ nav ul {
 
 nav ul li {
   display: flex;
+  margin: 40px;
 }
 
 li a {
   text-decoration: none;
-  color: grey;
-  font-size: 15px;
+  color: #ffffff;
+  font-size: 25px;
   padding: 1em;
   flex: 1;
+  border: 5px;
+  margin-left: 20px;
   text-align: center;
 }
 
-li a:hover {
-  background-color; white;
-  color; grey;
+.overskrift {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #54ad35;
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 5%;
+  font-size: 35px;
+}
+
+h2 {
+  text-decoration: none;
+  color: #313030;
+  font-size: 20px;
+  padding: 1px;
+  flex: 1;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+h3 {
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  background-color: #54ad35;
+  border-radius: 60px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.punkt {
+  text-decoration: none;
+  color: #ffffff;
+  border-radius: 60px;
 }
 
 .toggle-collapse {
   float: left;
-  margin-left: -3.3em;
-  margin-top: .5em;
-  content:"";
+  margin-left: 1em;
+  margin-top: 0.5em;
+  content: "";
   outline: inherit;
   border: 0px;
   background-color: transparent;
 }
 
-.toggle-icon, .toggle-icon:before, .toggle-icon:after {
+.toggle-icon,
+.toggle-icon:before,
+.toggle-icon:after {
   content: "";
   width: 30px;
   height: 3px;
   position: fixed;
-  background-color: black;
+  background-color: #ffffff;
   border-radius: 2em;
-  border: 1px solid black;
+  border: 1px solid;
   cursor: pointer;
-  transition: 0.800s ease;
+  transition: 0.8s ease;
   margin-top: 0.8em;
+  z-index: 102;
 }
 
 .toggle-icon:before {
@@ -117,40 +152,65 @@ li a:hover {
   width: 30px;
 }
 
-li a {
-  text-decoration: none;
-  padding: 0;
-  font-size: 1.5em;
-  color: grey;
-}
-
-button{
+button {
   background-color: #696969;
   color: #ffffff;
   padding: 0.5rem;
 }
 
-/* menu {
-  margin: 0;
-  padding: 0;
-  width: 200px;
-  background-color: #f1f1f1;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
-  float: right;
-} */
-
-/* #menu li {
-  list-style: none;
-  margin: 20px;
+.myInput {
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  width: 60%;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #313030;
+  margin-bottom: 12px;
+  margin-top: 5%;
+  margin-left: 20%;
 }
 
-#menu li a {
-  color: #000;
+.myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 20%;
+  margin-top: 0;
+  background-color: #54ad35;
+  border-radius: 10%;
+  z-index: 98;
+}
+
+.myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px;
+  background-color: #f6f6f6;
+  padding: 12px;
   text-decoration: none;
-  font-size: 28px;
-} */
+  font-size: 18px;
+  color: #313030;
+  display: block;
+}
+
+.myUL li a:hover:not(.header) {
+  background-color: #eee;
+  z-index: 90;
+}
+
+ul menu {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+#menu {
+  margin: 5px;
+  border: 10px;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  flex-direction: row;
+  list-style: none;
+  justify-content: center;
+  order: 5;
+}
 
 section {
   width: 100%;
@@ -159,47 +219,148 @@ section {
   position: relative;
 }
 
-.zoom {
-  height: 100vh;
-  width: 100%;
-  display: grid;
-  place-items: center;
-  top: 0;
-  left: 0;
-}
-
-#overlay {
-  border: 1px solid black;
-  width: 300px;
-  height: 200px;
-  display: inline-block;
-  background-image: url(kipgryde.jpg);
-  background-repeat: no-repeat;
-}
-
 .kipgryde {
-  width: 300px;
+  width: 350px;
   height: auto;
+  margin-left: 38%;
 }
 
-/* #hjem {
-  background-color: white;
+.billede1 {
+  width: auto;
+  height: 300px;
+  margin-right: 90px;
+  margin-top: 0;
 }
 
-#produkter {
-  background-color: green;
+.tekst_felt1 {
+  margin-left: 20px;
+  margin-right: 250px;
+  display: flex;
+  flex-direction: row;
 }
 
-#omos {
-  background-color: white;
+.collage1 {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  color: #313030;
+  justify-content: space-around;
+  padding: 0;
+  font-size: 20px;
+  margin: 5%;
 }
 
-#kontakt {
-  background-color: green;
-} */
+#hjem {
+  height: 100%;
+}
 
-h1 {
-  position: absolute;
+#montering {
+  background-color: #ffffff;
+  color: #313030;
+}
+
+#generelt {
+  background-color: #54ad35;
+  color: #ffffff;
+}
+
+#håndtering {
+  background-color: #ffffff;
+  color: #313030;
+}
+
+#elektrisk {
+  background-color: #54ad35;
+  color: #ffffff;
+}
+
+#tilslutning {
+  background-color: #ffffff;
+  color: #313030;
+}
+
+#mekanisk {
+  background-color: #54ad35;
+  color: #ffffff;
+}
+
+#fastgørelse {
+  background-color: #ffffff;
+  color: #313030;
+}
+
+#udskiftning {
+  background-color: #54ad35;
+  color: #ffffff;
+}
+
+#varme {
+  background-color: #54ad35;
+  color: #ffffff;
+}
+
+#test {
+  background-color: #ffffff;
+  color: #313030;
+}
+
+#omrørering {
+  background-color: #ffffff;
+  color: #313030;
+}
+
+#vand {
+  background-color: #53ad35;
+  color: #ffffff;
+}
+
+#kipfunktion {
+  background-color: #ffffff;
+}
+
+#ibrugtagning {
+  background-color: #54ad35;
+  color: #ffffff;
+}
+
+#alarm {
+  background-color: #ffffff;
+  color: #313030;
+}
+
+#programmer {
+  background-color: #54ad35;
+  color: #ffffff;
+}
+
+#opvarmning {
+  background-color: #ffffff;
+  color: #313030;
+}
+
+#røre {
+  background-color: #54ad35;
+  color: #ffffff;
+}
+
+#påfyldning {
+  background-color: #ffffff;
+  color: #313030;
+}
+
+#tider {
+  background-color: #54ad35;
+  color: #ffffff;
+}
+
+#køling {
+  background-color: #ffffff;
+  color: #313030;
+}
+
+#buzzer {
+  background-color: #54ad35;
+  color: #ffffff;
 }
 
 #btnScrollToTop {
@@ -209,14 +370,35 @@ h1 {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: red;
-  box-shadow: 0 0 10px rgba(0,0,0,0.25);
-  color: #ffffff;
+  background: #ffffff;
+  color: #54ad35;
   outline: none;
   cursor: pointer;
   border-style: none;
+  z-index: 101;
 }
 
 #btnScrollToTop:active {
-  background: darkred;
+  background: #54ad35;
+}
+
+#button {
+  color: #ffffff;
+  background-color: #54ad35;
+  padding: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 20px;
+  border-radius: 60px;
+  border-style: none;
+  font-family: "Roboto Condensed", sans-serif;
+  margin-left: 36%;
+  margin-bottom: 5%;
+}
+
+#first-ul {
+  list-style: none;
+  font-family: "Roboto Condensed", sans-serif;
+  margin-left: 40%;
+  margin-bottom: 2%;
 }
