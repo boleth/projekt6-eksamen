@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="da" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styleguide1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title>Online Styleguide</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="#" class="logo">Online Styleguide - projekt 6</a>
+      <ul class="nav">
+        <li><a href="#home">Hjem</a></li>
+        <li><a href="#typografi">Typografi</a></li>
+        <li><a href="#knapper">Knapper</a></li>
+        <li><a href="#ikoner">Ikoner</a></li>
+        <li><a href="#farver">Farver</a></li>
+        <li><a href="#billeder">Billeder</a></li>
+      </ul>
+    </div>
+    <div class="banner-area" id="home"></div>
+    <div class="typo-area" id="typografi">
+      <div class="text-part">
+        <h1>TYPOGRAFI<h1>
+        <h2>Overskrifter</h2>
+        <p>Roboto Condensed: h1; 15px, h2; 10px & h3; 16px; </p>
+        <h2>Brødtekst</h2>
+        <p>Roboto Condensed: 15px</p>
+        <h2>Kode</h2>
+        <textarea name="name" rows="1" cols="number">
+        HTML: <link rel="preconnect" href="https://fonts.gstatic.com">
+          <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+          <h1></h1>
+          <h2></h2>
+          <h3></h3>
+
+        CCS:
+        h1 {
+          text-align: center;
+          padding-top: 5%;
+          font-size: 15px;
+        }
+
+        h2 {
+          text-decoration: none;
+          color: #313030;
+          font-size: 10px;
+          padding: 1px;
+          flex: 1;
+          text-align: center;
+          flex-wrap: wrap;
+        }
+
+        h3 {
+          text-decoration: none;
+          font-size: 16px;
+          color: #ffffff;
+          background-color: #54ad35;
+          border-radius: 60px;
+          margin-left: 10px;
+          margin-right: 10px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+        </textarea>
+      </div>
+    </div>
+    <div class="knap-area" id="knapper">
+      <div class="text-part">
+        <h1>KNAPPER<h1>
+          <p>På siden bruges knapper som Call to Action, det gør at brugeren føres nemt gennem sin task. Der gøres primært brug af knapper ved oversigten over de forskellige emner, der giver et nemt brugervenligt overblik.</p>
+          <br>
+        <button class="button1">"tekst"</button>
+        <br>
+        <br>
+        <textarea name="name" rows="1" cols="number">
+        Knap 1
+        HTML: <ul id="first-ul"></ul>
+        <button id="button">Har du problemer? Kontakt os her</button>
+        </div>
+
+        CCS:
+        #button {
+          color: #ffffff;
+          background-color: #54ad35;
+          padding: 50px;
+          padding-top: 15px;
+          padding-bottom: 15px;
+          font-size: 20px;
+          border-radius: 60px;
+          border-style: none;
+          font-family: "Roboto Condensed", sans-serif;
+          margin-left: 36%;
+          margin-bottom: 5%;
+        }
+
+        #first-ul {
+          list-style: none;
+          font-family: "Roboto Condensed", sans-serif;
+          margin-left: 40%;
+          margin-bottom: 2%;
+        }
+        }
+
+
+        Knap 2
+        HTML:
+        <div class="container-menu">
+          <ul id="menu">
+            <li class="punkt">
+              <a href="#montering"><h3>Montering</h3></a>
+            </li>
+            <li class="punkt">
+              <a href="#udskiftning"><h3>Filter</h3></a>
+            </li>
+            <li class="punkt">
+              <a href="#test"><h3>Test</h3></a>
+            </li>
+            <li class="punkt">
+              <a href="#alarm"><h3>Alarm</h3></a>
+            </li>
+            <li class="punkt">
+              <a href="#progammer"><h3>Progammer</h3></a>
+            </li>
+          </ul>
+        </div>
+
+        CSS:
+        .punkt {
+          text-decoration: none;
+          color: #ffffff;
+          border-radius: 60px;
+        }
+
+        #menu {
+          margin: 5px;
+          border: 10px;
+          display: flex;
+          flex-wrap: wrap-reverse;
+          flex-direction: row;
+          list-style: none;
+          justify-content: center;
+          order: 5;
+        }
+
+
+        </textarea>
+      </div>
+    </div>
+    <div class="ikon-area" id="ikoner">
+      <div class="text-part">
+        <h1>IKONER<h1>
+          <p> Ikoner bruges til at skabe genkendelighed på siden, det optimerer brugeroplevelsen.
+          </p>
+          <p>Telefonikon, bruges ved telefonnummeret, så det er nemt for brugeren at finde</p>
+          <button id="btnScrollToTop">
+            <i class="material-icons">arrow_upward</i>
+          </button>
+          <br>
+          <textarea name="name" rows="1" cols="number">
+          HTML: <button id="btnScrollToTop">
+            <i class="material-icons">arrow_upward</i>
+          </button>
+
+          CSS: #btnScrollToTop {
+            position: absolute;
+            right: 10px;
+            bottom: 375px;
+            width: 50px;
+            height: 50px;
+            margin-right: 950px;
+            margin-bottom: 30px;
+            border-radius: 50%;
+            background: #ffffff;
+            color: #54ad35;
+            outline: none;
+            cursor: pointer;
+            border-style: none;
+            z-index:101;
+          }
+
+          #btnScrollToTop:active {
+            background: #54ad35;
+          }
+          </textarea>
+      </div>
+    </div>
+    <div class="farve-area" id="farver">
+      <div class="text-part">
+        <h1>FARVER<h1>
+          <p> Grøn bruges som primærfarve sammen med hvid. Mørkegrå bruges til tekstfarve, da det skaber et blødere udtryk fremfor sort. Derudover skabes en god kontrast.
+          </p>
+          <div class="farver">
+            <div class="farve1">#54ad35</div>
+            <div class="farve2">#313030</div>
+            <div class="farve3">#ffffff</div>
+          </div>
+          <textarea name="name" rows="1" cols="number">
+          CCS:
+          background-color: #54ad35;
+          background-color: #313030;
+          background-color: #ffffff;
+          </textarea>
+      </div>
+    </div>
+    <div class="billede-area" id="billeder">
+      <div class="text-part">
+        <h1>BILLEDER<h1>
+          <div class="billeder_collage">
+            <div class"billede1">
+              <img src="kipgryde3.jpg" alt="billede1"/>
+            </div>
+            <div class"billede2"></div>
+            <img src="kipgryde4.jpg" alt="billede1"/>
+          </div>
+          <textarea name="name" rows="1" cols="number">
+          HTML:
+          <img src="kipgryde.jpg" alt="billede1"/>
+          <img src="kipgryde3.jpg" alt="billede1"/>
+          <img src="kipgryde4.jpg" alt="billede1"/>
+
+          CSS:
+          .kipgryde {
+            width: 350px;
+            height: auto;
+            margin-left: 38%;
+          }
+
+
+          .billede1 {
+            width: auto;
+            height: 300px;
+            margin-right: 90px;
+            margin-top: 0;
+          }
+          </textarea>
+      </div>
+    </div>
+  </body>
+  </html>
